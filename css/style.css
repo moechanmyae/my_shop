@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,900&display=swap);
+
+* {
+    font-family: Roboto, sans-serif
+}
+
+:root {
+    --primary-soft: #f3f3f3
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.menu-title {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #949494
+}
+
+.menu-item-link {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark);
+    padding: 10px
+}
+
+.menu-item-link.active {
+    background-color: var(--primary);
+    color: #fff !important;
+    border-radius: .25rem
+}
+
+.menu-item {
+    transition: .5s
+}
+
+.menu-item:hover {
+    background-color: var(--primary-soft);
+    border-radius: .25rem
+}
+
+.menu-item-link:hover {
+    text-decoration: none;
+    color: var(--dark);
+    border-radius: .25rem
+}
+
+.menu-spacer {
+    padding: 10px 0
+}
+
+.content {
+    background-color: var(--primary-soft);
+    overflow: scroll;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) inset
+}
+
+.header {
+    position: sticky;
+    top: .2rem;
+    z-index: 2000
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%
+}
+
+.sidebar {
+    overflow: scroll
+}
+
+.show-sidebar-btn {
+    font-size: 2em;
+    cursor: pointer
+}
+
+.full-screen-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 2005;
+}
+
+.card {
+    border: none
+}
+
+.status-card {
+    transition: .3s
+}
+
+.status-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2)
+}
+
+.status-card:active {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2)
+}
+
+.ov-img {
+    margin-left: -25px
+}
+
+.item-carousel {
+    margin-top: -100px
+}
+
+.item-card-img {
+    height: 200px;
+    width: 100px
+}
+
+.carousel-height {
+    height: 160px
+}
+
+.carousel-buttom {
+    bottom: -30px
+}
+
+.sub-list tr {
+    transition: .3s;
+    cursor: pointer
+}
+
+.sub-list tr:active {
+    transform: scale(1.02)
+}
+
+@media screen and (max-width :500px) {
+    .table-responsive {
+        display: block !important
+    }
+}
+
+@media screen and (max-width :780px) {
+    .sidebar {
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        display: block !important;
+        background-color: #fff;
+        margin-left: -100%
+    }
+
+    .item-carousel-card {
+        margin-top: 100px
+    }
+}
